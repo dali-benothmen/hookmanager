@@ -11,7 +11,7 @@
     "scripts": {
         "clean": "rimraf dist/**",
         "compile:tsc": "tsc -p .",
-        "compile:tsup": "tsup src/** --format cjs,esm --dts",
+        "compile:tsup": "tsup src/**/*.{ts,tsx} --format cjs,esm --dts --ignore 'src/__tests__/**'",
         "build": "pnpm run clean && pnpm run compile:tsup",
         "test": "jest",
         "release": "pnpm run test && pnpm run build && changeset publish",
