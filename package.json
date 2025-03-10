@@ -1,5 +1,5 @@
 {
-    "name": "hookmanager",
+    "name": "hookmaster",
     "version": "1.0.0",
     "description": "Effortlessly manage and execute lifecycle hooks in your JavaScript and TypeScript applications",
     "main": "dist/index.js",
