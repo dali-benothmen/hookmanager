@@ -1,5 +1,5 @@
 {
-    "name": "hookmaster",
+    "name": "hookhive",
     "version": "1.0.0",
     "description": "Effortlessly manage and execute lifecycle hooks in your JavaScript and TypeScript applications",
     "main": "dist/index.js",
