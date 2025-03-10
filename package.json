@@ -1,6 +1,6 @@
 {
     "name": "hookhive",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Effortlessly manage and execute lifecycle hooks in your JavaScript and TypeScript applications",
     "main": "dist/index.js",
     "module": "./dist/index.mjs",
