@@ -14,7 +14,8 @@
         "compile:tsup": "tsup src/** --format cjs,esm --dts",
         "build": "pnpm run clean && pnpm run compile:tsup",
         "test": "jest",
-        "prepublishOnly": "npm run build"
+        "release": "pnpm run test && pnpm run build && changeset publish",
+        "ci": "pnpm run test && pnpm run build"
     },
     "keywords": [
         "hooks",
