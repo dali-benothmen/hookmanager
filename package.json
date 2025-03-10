@@ -1,0 +1,38 @@
+{
+    "name": "hookmanager",
+    "version": "1.0.0",
+    "description": "Effortlessly manage and execute lifecycle hooks in your JavaScript and TypeScript applications",
+    "main": "dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rimraf dist/**",
+        "compile:tsc": "tsc -p .",
+        "compile:tsup": "tsup src/** --format cjs,esm --dts",
+        "build": "pnpm run clean && pnpm run compile:tsup",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "hooks",
+        "lifecycle",
+        "events",
+        "plugin",
+        "middleware"
+    ],
+    "author": "Mohamed Ali Ben Othmen",
+    "license": "MIT",
+    "packageManager": "pnpm@10.6.1",
+    "dependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.13.10",
+        "jest": "^29.7.0",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.2.6",
+        "tsup": "^8.4.0",
+        "typescript": "^5.8.2"
+    }
+}
