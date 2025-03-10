@@ -3,7 +3,7 @@
 Effortlessly manage and execute lifecycle hooks in your JavaScript and TypeScript applications.
 
 [![npm version](https://img.shields.io/npm/v/hookhive.svg)](https://www.npmjs.com/package/hookhive)
-[![license](https://img.shields.io/npm/l/hookhive.svg)](https://github.com/yourusername/hookmanager/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/hookhive.svg)](https://github.com/egoist/tsup/blob/main/LICENSE)
 
 ## 📘 Description
 
