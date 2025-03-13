@@ -14,20 +14,17 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: pnpm/action-setup@v2
-              with:
-                  version: 8
             - uses: actions/setup-node@v3
               with:
                   node-version: 16.x
-                  cache: "pnpm"
+                  cache: "npm"
 
-            - run: pnpm install --no-frozen-lockfile
+            - run: npm install --no-frozen-lockfile
             - name: Create Release Pull Request or Publish
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: pnpm run release --access public
+                  publish: npm run release --access public
               env:
                   GITHUB_TOKEN: ${{ secrets.GTH_ACCESS_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
